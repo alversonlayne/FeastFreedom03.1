@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    @*<h1>Feast Freedom</h1>
+        <p class="lead">Welcome To <i>Feast Freedom!</i></p>*@
+    <div align="center">
+        <a href="@Url.Action("Index", "Kitchen")">
+            <img src="https://66.media.tumblr.com/4d14a83ff2c7c949a1aaa57c3f660b8d/tumblr_p6b6weQnJG1vbdodoo1_500.gifv" height="250" align="middle" />
+        </a>
+        <br />
+        <br />
+        <p>
+            <img src="https://static.wixstatic.com/media/3aee97_bba1dbc86f7445229fc322cec7de5a95~mv2.gif" height="70" />
+            <a href="@Url.Action("Index", "Kitchen")" id="order-btn" class="btn btn-primary btn-lg" align="center">Place Your Order &raquo;</a>
+            <img src="https://thumbs.gfycat.com/FixedPolishedEuropeanfiresalamander-size_restricted.gif" height="50" />
+        </p>
+        @*@Html.ActionLink("This is a test", "About", new { @class = "btn"})*@
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>
+            <img src="https://data.whicdn.com/images/204707563/original.gif" height="30" />
+            Feeling Hungry?
+        </h2>
+        <p>
+            Find all of your favorite restaurants in one place!
+        </p>
+        <p><a class="btn btn-default" href="@Url.Action("Index", "Kitchen")">View Kitchens &raquo;</a></p>
+    </div>
+    @*<div class="col-md-4">
+            <h2>Get more libraries</h2>
+            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        </div>*@
+    @*<div class="col-md-4">
+            <h2>Web Hosting</h2>
+            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        </div>*@
+</div>

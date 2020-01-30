@@ -1,0 +1,137 @@
+﻿@model IEnumerable<FeastFreedom03.Models.Kitchen>
+
+@{
+    ViewBag.Title = "Kitchens";
+}
+
+<h2>
+    @ViewBag.Title
+    <img src="http://24.media.tumblr.com/tumblr_m96h1tBM1D1qczxjoo1_400.gif" height="40" />
+</h2>
+<h3>
+    <i>@ViewBag.Message</i>
+    <img src="~/img/flavor.gif" height="60"/>
+</h3>
+
+@*<p>
+        @Html.ActionLink("Create New", "Create")
+    </p>*@
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.KitchenName)
+        </th>
+        @*<th>
+                @Html.DisplayNameFor(model => model.KitchenEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KitchenPassword)
+            </th>*@
+        <th></th>
+    </tr>
+    <tr>
+        
+        <td>
+            <a href="@Url.Action("OrderPage", "Order")">
+                <img src="https://cdn.cp.adobe.io/content/2/dcx/e26a4a07-867d-48e9-946b-d9b8c6c5e3b8/rendition/preview.jpg/version/0/format/jpg/dimension/width/size/300" />
+            </a>
+        </td>
+        <td>
+            <a href="@Url.Action("OrderPage", "Order")">
+                <img src="https://cdn.cp.adobe.io/content/2/dcx/007a3d40-14e6-4ff1-aa73-276350cfb514/rendition/preview.jpg/version/0/format/jpg/dimension/width/size/300" />
+            </a>
+        </td>
+        <td>
+            <a href="@Url.Action("OrderPage", "Order")">
+                <img src="https://cdn.cp.adobe.io/content/2/dcx/7d5bed1a-62dd-450a-97b9-2046ebc31931/rendition/preview.jpg/version/0/format/jpg/dimension/width/size/300" />
+            </a>
+        </td>
+        
+    </tr>
+
+    @*@foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.KitchenName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.KitchenEmail)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.KitchenPassword)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id=item.KitchenID }) |
+                    @Html.ActionLink("Details", "Details", new { id=item.KitchenID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id=item.KitchenID })
+                </td>
+            </tr>
+        }*@
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*@{
+        ViewBag.Title = "Index";
+    }
+
+    <h2>Index</h2>
+
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.KitchenName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KitchenEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KitchenPassword)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KitchenID)
+            </th>
+            <th></th>
+        </tr>
+
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.KitchenName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KitchenEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KitchenPassword)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KitchenID)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.KitchenID }) |
+                @Html.ActionLink("Details", "Details", new { id=item.KitchenID }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.KitchenID })
+            </td>
+        </tr>
+    }
+
+    </table>*@
+

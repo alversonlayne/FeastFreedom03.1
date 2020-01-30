@@ -1,0 +1,73 @@
+﻿@model IEnumerable<FeastFreedom03.Views.ViewModels.OrderViewModel>
+
+@{
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>OrderPage</title>
+</head>
+@using (Html.BeginForm("OrderPage", "Order", FormMethod.Post)) 
+{
+<body>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ItemName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ItemPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.isVeg)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KitchenName)
+            </th>
+        </tr>
+      
+
+
+
+        @*@foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ItemName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ItemPrice)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.isVeg)
+                        </td>
+                        <td>
+                            @Html.EditorFor(modelItem => item.Quantity)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.KitchenName)
+                        </td>
+                    </tr>
+                  }*@
+     </table>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    @Html.AntiForgeryToken()
+                    @Html.ActionLink("Place Order", "OrderComplete")
+                    @*<input type="submit" value="Submit" class="btn btn-default" />*@
+                </div>
+            </div>
+
+
+
+</body>
+}
+
+</html>
